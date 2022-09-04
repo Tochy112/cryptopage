@@ -1,0 +1,10 @@
+.btn{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-radius: 32px;
+    background-color: #3671E9;
+    border: #3671E9;
+    padding: 14px 32px;
+    color: #fff;
+}

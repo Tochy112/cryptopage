@@ -1,0 +1,65 @@
+.card_div div{
+    width: 300px;
+    height: 300px;
+    border-radius: 16px;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    padding: 30px 5px;
+    box-shadow: 0px 3px 5px #E0E0E0;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+}
+
+.card_div div h2{
+    color: #000;
+    margin: 20px 0;
+}
+.card_div div h2 span{
+    color: #828282;
+    font-size: small;
+    position: relative;
+    bottom: 5px;
+}
+.card_div div .body{
+    color: #828282;
+}
+.card_div div:hover{
+   background-color: #2B076E;
+}
+.card_div div:hover h2{
+    color: #fff;
+}
+.card_div .bttn img{
+    border: 1.5px solid grey;
+    border-radius: 50%;
+}
+
+.card_div .bttn{
+    border: none;
+    background: none;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+.card_div div:hover .bttn{
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    border-radius: 32px;
+    background-color: #3671E9;
+    border: #3671E9;
+    padding: 5px 15px;
+    color: #fff;
+    font-size: 15px; 
+    transition:  0.5s ease-in-out;   
+}
+.card_div .bttn p{
+  display: none;
+}
+.card_div div:hover .bttn p{
+    display: block;
+}
