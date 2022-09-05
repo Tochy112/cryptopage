@@ -9,7 +9,7 @@ import {AiOutlineClose } from 'react-icons/ai';
 
 const Navbar = () => {
 
-    const [expanded, setExpanded] = useState(false)
+    const [expanded, setExpanded] = useState(true)
 
   return (
     <div className='wrapper'>
