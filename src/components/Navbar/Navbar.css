@@ -8,26 +8,22 @@
     padding-top: 10px;
     margin: 0 100px;
 }
-.navbar nav ul{
+.navbar .nav ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.navbar nav li{
+.navbar .nav li{
     list-style: none;
     margin-right: 30px;
     font-size: large; 
     color: #fff;
 }
-.navbar nav li a{
+.navbar .nav li a{
     color: #fff;
 }
-.navbar nav li:nth-child(5){
-    border-right: 1px solid;
-    padding-right: 15px;
-}
 
-.navbar nav li a{
+.navbar .nav li a{
     text-decoration: none;
 }
 .navbar-brand{
@@ -38,4 +34,96 @@
     display: flex;
     gap: 10px;
     font-size: large;
+}
+.menu{
+    display: none;
+    color: #fff;
+    font-size: 30px;
+}
+.register_links{
+    display: flex;
+    align-items: center;
+}
+
+.register_links li:nth-child(1){
+    border-right: 2px solid grey;
+    padding-right: 20px;
+}
+
+.btn_close{
+    margin: 25px 54px 0 0;
+    float: right;
+    background-color: #252540;
+    border: #252540;
+    color: #fff;
+    display: none;
+    font-size: 25px;
+}
+
+
+/* NAV-ACTIVE */
+.nav-active{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+    width: 100%;
+    animation: hd 0.7s ease-in-out;
+    background-color: #252540;
+    display: none;
+}
+.nav-active ul{
+    margin: 10em 0;
+}
+.nav-active ul li{
+    list-style: none;
+    margin-top: 30px;
+}
+.nav-active ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: larger;
+    color: #fff;
+}
+.nav-active .register_links{
+    justify-content: center;
+    margin-left: 20px;
+}
+.nav-active .register_links li:nth-child(1){
+    border-right: 2px solid grey;
+}
+.nav-active .register_links li:nth-child(2){
+    padding-left: 10px;
+}
+.nav-active .btn_close{
+    display: block;
+}
+
+
+@keyframes hd {
+    From{
+        width: 0%;
+    }
+    To{
+        width:100%;
+    }
+}
+
+@media screen and (max-width:864px){
+    .navbar{
+        margin: 0px 50px;
+        padding: 20px 0;
+    }
+    .nav{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .nav-active{
+        display: block;
+    }
 }

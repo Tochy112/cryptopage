@@ -2,34 +2,58 @@ import React from 'react'
 import "./Navbar.css"
 import Btn from "../Button/Button"
 import logo from "../../Assets/Logo (1).png"
+import {Link} from "react-router-dom"
+import { useState } from 'react'
+import { HiMenu  } from 'react-icons/hi';
+import {AiOutlineClose } from 'react-icons/ai';
 
 const Navbar = () => {
+
+    const [expanded, setExpanded] = useState(false)
+
   return (
     <div className='wrapper'>
         <div className='navbar'>
-            <a href="/"  className='navbar-brand'><img src={logo} alt="logo"/></a>
-            <nav>
+            <Link to="/"  className='navbar-brand'><img src={logo} alt="logo"/></Link>
+            <nav
+                className={expanded ? "nav" : "nav-active"}
+                onClick={() => setExpanded(!expanded)}
+            >
+
+                <div className='btn_close'>
+                    <AiOutlineClose />
+                </div>
+                
                 <ul>
                     <li>
-                        <a href="/">Products</a>
+                        <Link to="/">Products</Link>
                     </li>
                     <li>
-                        <a href="/">Features</a>
+                        <Link to="/">Features</Link>
                     </li>
                     <li>
-                        <a href="/">About</a>
+                        <Link to="/">About</Link>
                     </li>
                     <li>
-                        <a href="/">Contact</a>
+                        <Link to="/">Contact</Link>
                     </li>
-                    <li>
-                        <a href="/">Login</a>
-                    </li>
-                    <li>
-                       <a href="/"><Btn content="Register" /></a>
-                    </li>
+                    <div className='register_links'>
+                        <li>
+                            <Link to="/">Login</Link>
+                        </li>
+                        <li>
+                        <Link to="/"><Btn content="Register" /></Link>
+                        </li>
+                    </div>
+                   
                 </ul>
             </nav>
+
+            <div className='menu' >
+                <HiMenu 
+                onClick = {() => setExpanded(!expanded)}
+                />
+            </div>
         </div>
     </div>
   )
