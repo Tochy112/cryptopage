@@ -1,5 +1,4 @@
 import React from 'react'
-import "./Page.css"
 import Btn from '../components/Button/Button'
 import Illustration1 from "../Assets/Illustration1.png"
 import arrow from "../Assets/Arrow Right.png"
