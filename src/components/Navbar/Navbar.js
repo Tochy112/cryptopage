@@ -2,20 +2,28 @@ import React from 'react'
 import "./Navbar.css"
 import Btn from "../Button/Button"
 import logo from "../../Assets/Logo (1).png"
-import {Link} from "react-router-dom"
 import { useState } from 'react'
 import { HiMenu  } from 'react-icons/hi';
 import {AiOutlineClose } from 'react-icons/ai';
+import { navAnimation } from "../animate";
+import { useScroll } from "../../components/Scroll";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
 
     const [expanded, setExpanded] = useState(true)
+    const [element, controls] = useScroll();
 
   return (
     <div className='wrapper'>
         <div className='navbar'>
-            <Link to="/"  className='navbar-brand'><img src={logo} alt="logo"/></Link>
-            <nav
+            <a href="/"  className='navbar-brand'><img src={logo} alt="logo"/></a>
+            <motion.nav
+                ref={element}
+                variants={navAnimation}
+                transition={{ delay: 0.1 }}
+                animate={controls} 
+                state={expanded ? 0 : 1}
                 className={expanded ? "nav" : "nav-active"}
                 onClick={() => setExpanded(!expanded)}
             >
@@ -24,30 +32,31 @@ const Navbar = () => {
                     <AiOutlineClose />
                 </div>
                 
-                <ul>
+                <ul                
+                >
                     <li>
-                        <Link to="/">Products</Link>
+                        <a href="/">Products</a>
                     </li>
                     <li>
-                        <Link to="/">Features</Link>
+                        <a href="/">Features</a>
                     </li>
                     <li>
-                        <Link to="/">About</Link>
+                        <a href="/">About</a>
                     </li>
                     <li>
-                        <Link to="/">Contact</Link>
+                        <a href="/">Contact</a>
                     </li>
                     <div className='register_links'>
                         <li>
-                            <Link to="/">Login</Link>
+                            <a href="/">Login</a>
                         </li>
                         <li>
-                        <Link to="/"><Btn content="Register" /></Link>
+                        <a href="/"><Btn content="Register" /></a>
                         </li>
                     </div>
                    
                 </ul>
-            </nav>
+            </motion.nav>
 
             <div className='menu' >
                 <HiMenu 

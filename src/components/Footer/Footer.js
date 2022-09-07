@@ -9,12 +9,27 @@ import insta from "../../Assets/instagram 1.png"
 import facebook from "../../Assets/facebook-f 1.png"
 import twitter from "../../Assets/twitter 1.png"
 import youtube from "../../Assets/youtube 1.png"
+import {motion} from "framer-motion"
+import {useScroll} from "../Scroll"
+import {genAnimation} from "../animate"
 
 
 const Footer = () => {
+    const [element, controls] = useScroll()
+
   return (
-    <footer>
-        <div className='footer_wrapper'> 
+    <footer
+    ref={element}
+    >
+        <motion.div className='footer_wrapper'
+         variants={genAnimation}
+         animate={controls}
+         transition={{
+             delay: 0.03,
+             type:"tween",
+             duration: 0.8
+         }}
+        > 
             <a href="/" className='img_div'>
                 <img src={logo} alt="logo" />
             </a>
@@ -45,7 +60,7 @@ const Footer = () => {
                 </div>
             </div>
 
-        </div>
+        </motion.div>
         
         <div className='footer_connect'>
             <p>  2022 CRAPPO. All rights reserved</p>

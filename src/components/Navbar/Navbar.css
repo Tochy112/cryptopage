@@ -101,14 +101,6 @@
 }
 
 
-@keyframes hd {
-    From{
-        width: 0%;
-    }
-    To{
-        width:100%;
-    }
-}
 
 @media screen and (max-width:864px){
     .navbar{

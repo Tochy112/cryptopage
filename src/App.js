@@ -1,21 +1,19 @@
 import './App.css';
 import Footer from './components/Footer/Footer';
-import Navbar from './components/Navbar/Navbar';
 import Page from './Page/Page';
-import {BrowserRouter, Routes, Route} from "react-router-dom"
+import {motion} from "framer-motion"
+import Navbar from "./components/Navbar/Navbar"
 
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path='/' element={<Page />} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
-    </div>
+    <motion.div initial="hidden" animate="show">
+      
+      <Navbar />
+      <Page />
+      <Footer />
+
+    </motion.div>
   );
 }
 

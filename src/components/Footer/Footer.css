@@ -73,3 +73,9 @@ footer{
         text-align: center;
     }
 }
+
+@media screen and (max-width:280px){
+    .footer_wrapper .payment div img{
+        width: 70px;
+    }
+}
