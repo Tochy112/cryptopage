@@ -64,3 +64,9 @@
 .card_div div:hover .bttn p{
     display: block;
 }
+
+@media screen and (max-width: 420px){
+    .card_div div{
+        width: 80%;
+    }
+}

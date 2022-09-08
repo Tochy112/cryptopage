@@ -354,7 +354,7 @@ code {
       
   }
   .features .img_div{
-      width: 450px;
+      width: 90%;
   }
   .features .img_div img{
       width: 100%;
@@ -365,7 +365,7 @@ code {
       font-size: 28px;
   }
   .profit .img_div{
-      width: 450px;
+      width: 90%;
   }
   .profit .img_div img{
       width: 100%;
@@ -376,7 +376,7 @@ code {
       font-size: 28px;  
   }
   .statistics .img_div{
-      width: 450px;
+      width: 90%;
   }
   .statistics .img_div img{
       width: 100%;
@@ -404,7 +404,7 @@ code {
       font-size: 23px;
   }
   .features .img_div{
-      width: 400px;
+      width: 90%;
   }
   .features .img_div img{
       width: 100%;
@@ -412,19 +412,19 @@ code {
 
   /* profit */
   .profit .img_div{
-      width: 400px;
+      width: 90%;
   }
   .profit .img_div img{
       width: 100%;
   }
 
   /* statistics */
-  .statistics .img_div{
+  /* .statistics .img_div{
       width: 400px;
   }
   .statistics .img_div img{
       width: 100%;
-  }
+  } */
 }
 
 @media screen and (max-width:320px){
