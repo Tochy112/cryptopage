@@ -5,7 +5,7 @@
 
 ### Animated with Framer Motion animation library
 
-(https://www.framer.com/motion/).
+[https://www.framer.com/motion/](https://www.framer.com/motion/).
 
 -----
 
