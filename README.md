@@ -1,11 +1,11 @@
 
-# This is my subsmission for a frontend dev challenge.
+### This is my subsmission for a frontend dev challenge.
 
-# This project was built with ReactJS 
+### This project was built with ReactJS 
 
-# Animated with Framer Motion animation library
+### Animated with Framer Motion animation library
 
-(https://www.framer.com/motion/).
+[https://www.framer.com/motion/](https://www.framer.com/motion/).
 
 -----
 
