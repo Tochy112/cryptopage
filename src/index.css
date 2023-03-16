@@ -5,12 +5,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-
 /*LANDING SECTION STYLINGS STARTS */
 
 .page_wrapper .landing_page{
@@ -23,6 +17,7 @@ code {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+
 }
 .page_wrapper .landing_page .landing_div .img_div{
   width: 500px;
@@ -385,6 +380,22 @@ code {
 
 
 @media screen and (max-width:450px){
+  .page_wrapper{
+    text-align: center;
+  }
+
+  .discount #text{
+    font-size: smaller;
+  }
+
+  .page_wrapper button{
+    text-align: center;
+  }
+
+  .page_wrapper .landing_page .landing_div .write_up h1{
+    font-size: 35px;
+    line-height: 75.84px;
+  }
 
   /* calculate */
   .calculate .write_up p:nth-child(1){
@@ -412,7 +423,7 @@ code {
 
   /* profit */
   .profit .img_div{
-      width: 90%;
+    width: 100%;
   }
   .profit .img_div img{
       width: 100%;

@@ -17,7 +17,7 @@ const Landing = () => {
                 >
                     <div className='discount'>
                         <div>75% SAVE</div>
-                        <p>For the Black Friday weekend</p>
+                        <p id="text">For the Black Friday weekend</p>
                     </div>
                     <h1>Fastest & secure <br /> platform to invest <br /> in crypto</h1>
                     <p>
